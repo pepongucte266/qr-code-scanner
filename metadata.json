@@ -1,0 +1,5 @@
+{
+  "name": "QR Code Scanner from Clipboard",
+  "description": "A minimalist, privacy-focused web application to scan QR codes directly from an image in your clipboard. Paste an image (Ctrl+V) or use the button to scan, and get the result instantly. All processing is done in your browser.",
+  "requestFramePermissions": []
+}
