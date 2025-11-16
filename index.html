@@ -29,45 +29,11 @@
     <meta property="twitter:description" content="Fast, privacy-focused QR code scanner. Paste or upload images to scan QR codes instantly in your browser." />
     <meta property="twitter:image" content="https://www.scan-qr.online/twitter-image.png" />
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              light: {
-                bg: '#F8F9FA',
-                text: '#212529',
-                'text-secondary': '#6C757D',
-                card: '#FFFFFF',
-                border: '#E9ECEF',
-              },
-              dark: {
-                bg: '#1A1B26',
-                text: '#E9E9E9',
-                'text-secondary': '#A0A0A0',
-                card: '#292A38',
-                border: '#3A3B4C',
-              },
-              accent: {
-                DEFAULT: '#007BFF',
-                hover: '#0069D9',
-              },
-              success: '#28A745',
-              error: '#DC3545',
-            }
-          }
-        }
-      }
-    </script>
   <script type="importmap">
 {
   "imports": {
