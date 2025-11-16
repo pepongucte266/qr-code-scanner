@@ -245,7 +245,8 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen text-light-text dark:text-dark-text font-sans flex flex-col items-center justify-center p-4">
       <Header theme={theme} setTheme={setTheme} />
-      <main className="w-full max-w-2xl flex flex-col items-center justify-center flex-grow">
+      <main className="w-full max-w-2xl flex flex-col items-center justify-center flex-grow" role="main" aria-label="QR Code Scanner">
+        <h1 className="sr-only">Free Online QR Code Scanner - Scan from Clipboard or Upload</h1>
         {renderContent()}
       </main>
       <Footer />
@@ -255,8 +256,9 @@ const App: React.FC = () => {
         onChange={handleFileSelect}
         className="hidden"
         accept="image/*"
+        aria-label="Upload QR code image file"
       />
-      <canvas ref={canvasRef} className="hidden"></canvas>
+      <canvas ref={canvasRef} className="hidden" aria-hidden="true"></canvas>
     </div>
   );
 };
